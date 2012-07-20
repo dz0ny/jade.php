@@ -28,7 +28,7 @@ class Node {
 		}
 		if ($type == 'text') {
 			$string = func_get_arg(1);
-			if ( !empty($string) ) {
+			if ( isset($string) && $string !== "") {
 				$this->lines = explode("\n", $string);
 			}
 		}
