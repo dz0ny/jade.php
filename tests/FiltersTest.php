@@ -1,8 +1,15 @@
 <?php
 
-use lib\Parser;
-use lib\Lexer;
-use lib\Dumper;
+require_once 'src/Jade/Node.php';
+require_once 'src/Jade/Dumper.php';
+require_once 'src/Jade/Lexer.php';
+require_once 'src/Jade/Parser.php';
+require_once 'src/Jade/Jade.php';
+
+use Jade\Jade;
+use Jade\Dumper;
+use Jade\Parser;
+use Jade\Lexer;
 
 class FiltersTest extends \PHPUnit_Framework_TestCase {
 
